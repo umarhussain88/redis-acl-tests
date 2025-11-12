@@ -1,5 +1,5 @@
 services:
   redis-fx:
-    build: .
+    build: ..
     ports:
       - "6379:6379"
