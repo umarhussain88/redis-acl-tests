@@ -1,7 +1,4 @@
 import redis
-## Steps
-# ACL SETUSER fxuser on >fxpassword123
-#ACL SETUSER fxuser -@all "~fx:*" +@read -@dangerous works
 
 r = redis.Redis(
             host='localhost',
