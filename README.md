@@ -1,9 +1,9 @@
 # redis-acl-tests
 
-docker-compose up -d
-
 ## Open Redis CLI Terminal
 ```bash
+
+docker-compose up -d
 docker-compose exec -it redis redis-cli
 
 
