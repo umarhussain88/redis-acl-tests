@@ -1,5 +1,8 @@
 import redis
+## Steps
+# ACL SETUSER fxuser on >fxpassword123
 #ACL SETUSER fxuser -@all "~fx:*" +@read -@dangerous works
+
 r = redis.Redis(
             host='localhost',
             port=6379,
@@ -9,11 +12,6 @@ r = redis.Redis(
 
 
         )
-
-#simple get
-value = r.get('fx:rate:USD:EUR')
-print(f"USD to EUR Rate -- ", value )
-
 
 # Test connection and get FX rates
 rates = r.hscan('fx:rates', match='*:AUD', count=10)
