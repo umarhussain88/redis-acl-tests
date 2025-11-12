@@ -4,7 +4,7 @@
 ```bash
 
 docker-compose up -d
-docker-compose exec -it redis redis-cli
+docker exec -it redis-redis-fx-1 redis-cli
 
 
 ACL SETUSER fxuser on >fxpassword123
